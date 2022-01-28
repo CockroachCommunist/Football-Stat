@@ -7,7 +7,7 @@ export const NavBar = () => {
     <nav className="containerNav">
       <ol className="list">
         <li>
-          <NavLink className="link" to="/">
+          <NavLink className="link" to="/Football-Stat">
             Матчи
           </NavLink>
         </li>
