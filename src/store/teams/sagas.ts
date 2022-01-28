@@ -7,7 +7,7 @@ import { FETCH_TEAM_REQUEST } from "./teamTypes";
 
 const getTeams = (id: number) =>
   axios.get(`https://api.football-data.org/v2/competitions/${id}/teams`, {
-    headers: { "X-Auth-Token": "e72124c4c9804e86944a231787f41c8d" },
+    headers: { "X-Auth-Token": `${process.env.REACT_APP_API_KEY}` },
   });
 
 function* TeamSagaWorker(action: Action<number>) {

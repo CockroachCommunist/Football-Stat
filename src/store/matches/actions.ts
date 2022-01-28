@@ -4,13 +4,7 @@ import {
   FETCH_MATCH_FAILURE,
 } from "./matchTypes";
 
-// import {
-//   FetchMatchRequest,
-//   FetchMatchSuccess,
-//   FetchMatchSuccessPayload,
-//   FetchMatchFailure,
-//   FetchMatchFailurePayload,
-// } from "./types";
+
 
 export const FetchMatchRequest = () => ({
   type: FETCH_MATCH_REQUEST,

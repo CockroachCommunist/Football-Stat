@@ -7,7 +7,7 @@ import { FETCH_COMPETITION_REQUEST } from "./competitionTypes";
 const getCompetitions = () =>
   axios.get("https://api.football-data.org/v2/competitions?plan=TIER_ONE", {
     headers: {
-      "X-Auth-Token": "e72124c4c9804e86944a231787f41c8d",
+      "X-Auth-Token": `${process.env.REACT_APP_API_KEY}`,
     },
   });
 
